@@ -10,6 +10,7 @@ class Kecamatan extends Model
 
     protected $fillable = [
         'id',
+        'kode',
         'kabupaten_id',
         'nama',
         'chart_01',

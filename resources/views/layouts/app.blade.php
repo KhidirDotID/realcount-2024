@@ -65,12 +65,7 @@
                 </a>
             </header>
 
-            <div class="page-heading">
-                <h3>Info Publik Pemilu 2024</h3>
-            </div>
-            <div class="page-content">
-                @yield('content')
-            </div>
+            @yield('content')
 
             <footer>
                 <div class="footer clearfix mb-0 text-muted">

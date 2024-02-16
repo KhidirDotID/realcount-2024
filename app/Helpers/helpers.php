@@ -248,3 +248,13 @@ if (!function_exists('hitung_suara_tps')) {
         return $data;
     }
 }
+
+if (!function_exists('hitung_persentase')) {
+    /**
+     * Hitung Persentase Perolehan Suara
+     */
+    function hitung_persentase($suara, $suara_total): int|float
+    {
+        return $suara_total ? ($suara / $suara_total) * 100 : 0;
+    }
+}

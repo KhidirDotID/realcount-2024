@@ -13,17 +13,33 @@ return new class extends Migration
     {
         Schema::create('tps', function (Blueprint $table) {
             $table->id();
+            $table->string('kode', 13);
             $table->foreignId('kelurahan_id');
             $table->string('nama', 100);
             $table->integer('chart_01')->nullable();
             $table->integer('chart_02')->nullable();
             $table->integer('chart_03')->nullable();
-            $table->integer('suara_sah');
-            $table->integer('suara_total');
-            $table->integer('pengguna_j');
-            $table->integer('pemilih_j');
-            $table->string('images_x1', 100);
-            $table->string('images_x2', 100);
+            $table->integer('suara_sah')->nullable();
+            $table->integer('suara_tidak_sah')->nullable();
+            $table->integer('suara_total')->nullable();
+            $table->integer('pemilih_dpt_laki')->nullable();
+            $table->integer('pemilih_dpt_perempuan')->nullable();
+            $table->integer('pemilih_dpt_jumlah')->nullable();
+            $table->integer('pengguna_dpt_laki')->nullable();
+            $table->integer('pengguna_dpt_perempuan')->nullable();
+            $table->integer('pengguna_dpt_jumlah')->nullable();
+            $table->integer('pengguna_dptb_laki')->nullable();
+            $table->integer('pengguna_dptb_perempuan')->nullable();
+            $table->integer('pengguna_dptb_jumlah')->nullable();
+            $table->integer('pengguna_dpk_laki')->nullable();
+            $table->integer('pengguna_dpk_perempuan')->nullable();
+            $table->integer('pengguna_dpk_jumlah')->nullable();
+            $table->integer('pengguna_total_laki')->nullable();
+            $table->integer('pengguna_total_perempuan')->nullable();
+            $table->integer('pengguna_total_jumlah')->nullable();
+            $table->string('images_x1', 140)->nullable();
+            $table->string('images_x2', 140)->nullable();
+            $table->string('images_x3', 140)->nullable();
             $table->timestamps();
 
             $table->foreign('kelurahan_id')->references('id')->on('kelurahan');

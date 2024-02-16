@@ -10,6 +10,7 @@ class Kabupaten extends Model
 
     protected $fillable = [
         'id',
+        'kode',
         'provinsi_id',
         'nama',
         'chart_01',

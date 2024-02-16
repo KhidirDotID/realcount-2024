@@ -10,6 +10,7 @@ class Kelurahan extends Model
 
     protected $fillable = [
         'id',
+        'kode',
         'kecamatan_id',
         'nama',
         'chart_01',

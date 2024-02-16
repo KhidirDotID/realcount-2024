@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('kabupaten', function (Blueprint $table) {
             $table->id();
+            $table->string('kode', 4);
             $table->foreignId('provinsi_id');
-            $table->string('nama', 32);
+            $table->string('nama', 38);
             $table->integer('chart_01')->nullable();
             $table->integer('chart_02')->nullable();
             $table->integer('chart_03')->nullable();
