@@ -16,4 +16,12 @@ class Nasional extends Model
         'progress_total',
         'updated_at'
     ];
+
+    protected $casts = [
+        'chart_01'        => 'integer',
+        'chart_02'        => 'integer',
+        'chart_03'        => 'integer',
+        'progress_proses' => 'integer',
+        'progress_total'  => 'integer'
+    ];
 }

@@ -14,5 +14,11 @@ class Ppwp extends Model
         'nomor_urut'
     ];
 
+    protected $casts = [
+        'nama'       => 'string',
+        'warna'      => 'string',
+        'nomor_urut' => 'string'
+    ];
+
     public $timestamps = false;
 }

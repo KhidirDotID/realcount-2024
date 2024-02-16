@@ -39,4 +39,35 @@ class Tps extends Model
         'images_x3',
         'updated_at'
     ];
+
+    protected $casts = [
+        'id'                       => 'integer',
+        'kode'                     => 'string',
+        'kelurahan_id'             => 'integer',
+        'nama'                     => 'string',
+        'chart_01'                 => 'integer',
+        'chart_02'                 => 'integer',
+        'chart_03'                 => 'integer',
+        'suara_sah'                => 'integer',
+        'suara_tidak_sah'          => 'integer',
+        'suara_total'              => 'integer',
+        'pemilih_dpt_laki'         => 'integer',
+        'pemilih_dpt_perempuan'    => 'integer',
+        'pemilih_dpt_jumlah'       => 'integer',
+        'pengguna_dpt_laki'        => 'integer',
+        'pengguna_dpt_perempuan'   => 'integer',
+        'pengguna_dpt_jumlah'      => 'integer',
+        'pengguna_dptb_laki'       => 'integer',
+        'pengguna_dptb_perempuan'  => 'integer',
+        'pengguna_dptb_jumlah'     => 'integer',
+        'pengguna_dpk_laki'        => 'integer',
+        'pengguna_dpk_perempuan'   => 'integer',
+        'pengguna_dpk_jumlah'      => 'integer',
+        'pengguna_total_laki'      => 'integer',
+        'pengguna_total_perempuan' => 'integer',
+        'pengguna_total_jumlah'    => 'integer',
+        'images_x1'                => 'string',
+        'images_x2'                => 'string',
+        'images_x3'                => 'string'
+    ];
 }
