@@ -132,6 +132,7 @@ class PpwpController extends Controller
                 $table = $suara_kabupaten->table->{$value->kode};
                 $data2[] = Kabupaten::create([
                     'id'              => $value->kode,
+                    'provinsi_id'     => $provinsi->id,
                     'nama'            => $value->nama,
                     'chart_01'        => $table->{100025} ?? 0,
                     'chart_02'        => $table->{100026} ?? 0,
